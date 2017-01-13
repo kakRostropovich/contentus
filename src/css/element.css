@@ -1,0 +1,18 @@
+html * {
+  outline: 0 solid magenta !important;
+}
+
+html .fp-hover {
+  outline: 2px solid #FC8DFF !important;
+  cursor: pointer;
+}
+
+html .fp-current, html .fp-hover.fp-current {
+  outline: 3px solid magenta !important;
+  cursor: pointer;
+  -webkit-transition: outline .1s;
+  -moz-transition: outline .1s;
+  -ms-transition: outline .1s;
+  -o-transition: outline .1s;
+  transition: outline .1s;
+}

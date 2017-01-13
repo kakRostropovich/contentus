@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+body {
+  padding: 20px;
+}
+
+div {
+  display: table;
+  padding: 20px;
+}
+
+.first_column {
+  float: left;
+  width: 25%;
+  margin-right: 20px;
+}
+
+.second_column {
+  float: left;
+  width: 70%;
+}

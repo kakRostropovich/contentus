@@ -1,0 +1,41 @@
+{
+  "name": "contentus",
+  "version": "0.1.0",
+  "description": "Simple JS-plugin (without dependences) to help fast testing elements during the development of web interfaces.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -w --display-modules --display-reasons",
+    "build": "webpack --optimize-minimize --display-modules --display-reasons --devtool=cheap-source-map --output-file=contentus.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakRostropovich/contentus.git"
+  },
+  "keywords": [
+    "JS",
+    "HTML",
+    "CSS",
+    "Debugging",
+    "Frontend"
+  ],
+  "author": "Rostislav Nazmeev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kakRostropovich/contentus/issues"
+  },
+  "homepage": "https://github.com/kakRostropovich/contentus#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "jquery": "^2.2.4",
+    "node-static": "0.7.9",
+    "style-loader": "^0.13.1",
+    "webpack": "1.14.0"
+  }
+}
