@@ -1,6 +1,6 @@
 {
   "name": "contentus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple JS-plugin (without dependences) to help fast testing elements during the development of web interfaces.",
   "main": "index.js",
   "directories": {
