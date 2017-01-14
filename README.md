@@ -2,6 +2,8 @@
 
 Simple JS-library (without dependencies) to help fast testing elements during the development of web interfaces.
 
+![contentus](https://raw.githubusercontent.com/kakRostropovich/contentus/master/contentus.gif)
+
 ## Description (English):
 
 **Contentus.js** is a simple tool that can help designers and frontend developers to accustom themselves to test the robustness of interfaces for different content during layout.
