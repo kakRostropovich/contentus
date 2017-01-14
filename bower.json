@@ -1,0 +1,15 @@
+{
+  "name": "contentus",
+  "version": "0.1.0",
+  "main": "dist/contentus.js",
+  "ignore": [
+    "src",
+    "test",
+    ".gitignore",
+    "bower.json",
+    "webpack.config.js",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ]
+}
