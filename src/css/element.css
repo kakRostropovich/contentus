@@ -2,12 +2,12 @@ html * {
   outline: 0 solid magenta !important;
 }
 
-html .fp-hover {
+html .ct-hover {
   outline: 2px solid #FC8DFF !important;
   cursor: pointer;
 }
 
-html .fp-current, html .fp-hover.fp-current {
+html .ct-current, html .ct-hover.ct-current {
   outline: 3px solid magenta !important;
   cursor: pointer;
   -webkit-transition: outline .1s;

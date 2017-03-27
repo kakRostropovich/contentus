@@ -27,10 +27,11 @@ Then run contentus:
 ```
 <script>
   contentus.create({
-    fastClass: 'myClass',
+    fastClass: 'myClass', # 'ct' by default
       contents: [
-      'Small text for example',
-      'Middle text in one line or two line for example'
+      'Small text',
+      'Middle text...',
+      'Big text...',
     ]
   });
 </script>
@@ -40,7 +41,7 @@ You can connect the library without any parameters then it will use texts by def
 
 #### How to use:
 
-1. In a text editor, create an HTML element and add a temporary class fp (or specified in the parameter fastClass when connecting libraries).
+1. In a text editor, create an HTML element and add a temporary class `ct` (or specified in the parameter fastClass when connecting libraries).
 2. After a page refresh in the browser the element will be highlighted with bright frame and ready for testing.
 3. left/right Arrows change the options of filling the element with that original content will not be lost (will be part of the list).
 4. If necessary, select another item for testing, Alt (Option) and clicking on the desired item.
@@ -70,10 +71,11 @@ $ npm install contentus
 ```
 <script>
   contentus.create({
-    fastClass: 'myClass',
+    fastClass: 'myClass', // 'ct' по умолчанию
       contents: [
-      'Small text for example',
-      'Middle text in one line or two line for example'
+      'Короткий текст для заголовка',
+      'Текст подлиннее для абзаца...',
+      'Самый большой текст...'
     ]
   });
 </script>
@@ -84,7 +86,7 @@ $ npm install contentus
 
 #### Как использовать:
 
-1. В текстовом редакторе сверстайте нужный элемент и добавьте к нему временный класс `fp` (или указанный вами в параметре `fastClass` при подключении библиотеки).
+1. В текстовом редакторе сверстайте нужный элемент и добавьте к нему временный класс `ct` (или указанный вами в параметре `fastClass` при подключении библиотеки).
 2. После обновления страницы в браузере этот элемент будет выделен яркой рамкой и готов к быстрому тестированию.
 3. Стрелками влево/вправо переключайте варианты наполнения элемента, при этот изначальное содержимое не будет потеряно (станет частью списка).
 4. При необходимости выберите другой элемент для тестирования, зажав клавишу Alt (Option) и кликнув по нужному элементу.

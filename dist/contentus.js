@@ -114,7 +114,7 @@ var contentus =
 	    _classCallCheck(this, Plugin);
 
 	    this.container = document.querySelector('' + options.container);
-	    this.fastSelector = options.fastClass ? '.' + options.targetSelector : '.fp';
+	    this.fastSelector = options.fastClass ? '.' + options.fastClass : '.ct';
 	    this.contents = options.contents && options.contents.push !== undefined ? options.contents : null;
 	    this.elements = [];
 
@@ -169,15 +169,15 @@ var contentus =
 	      document.body.addEventListener('mousemove', function (event) {
 
 	        if (event.altKey) {
-	          [].map.call(document.querySelectorAll('.fp-hover'), function (item) {
-	            item.classList.remove('fp-hover');
+	          [].map.call(document.querySelectorAll('.ct-hover'), function (item) {
+	            item.classList.remove('ct-hover');
 	          });
-	          event.target.classList.add('fp-hover');
+	          event.target.classList.add('ct-hover');
 
 	          event.stopPropagation();
 	        } else {
-	          [].map.call(document.querySelectorAll('.fp-hover'), function (item) {
-	            item.classList.remove('fp-hover');
+	          [].map.call(document.querySelectorAll('.ct-hover'), function (item) {
+	            item.classList.remove('ct-hover');
 	          });
 	        }
 	      });
@@ -187,7 +187,7 @@ var contentus =
 	        if (event.altKey) {
 	          var _ret = function () {
 
-	            var prefix = 'fp-uniq';
+	            var prefix = 'ct-uniq';
 	            var uniqClass = prefix + Math.random().toString().slice(2);
 	            var classWithPrefix = '';
 	            var target = event.target;
@@ -305,7 +305,7 @@ var contentus =
 	    this.DOMElement = document.querySelector('' + selector);
 	    this.initialContent = this.DOMElement.innerHTML;
 	    this.currentIndex = 0;
-	    this.debugClass = 'fp-current';
+	    this.debugClass = 'ct-current';
 
 	    this.contents.unshift(this.initialContent);
 	  }
@@ -420,7 +420,7 @@ var contentus =
 
 
 	// module
-	exports.push([module.id, "html * {\n  outline: 0 solid magenta !important;\n}\n\nhtml .fp-hover {\n  outline: 2px solid #FC8DFF !important;\n  cursor: pointer;\n}\n\nhtml .fp-current, html .fp-hover.fp-current {\n  outline: 3px solid magenta !important;\n  cursor: pointer;\n  -webkit-transition: outline .1s;\n  -moz-transition: outline .1s;\n  -ms-transition: outline .1s;\n  -o-transition: outline .1s;\n  transition: outline .1s;\n}", ""]);
+	exports.push([module.id, "html * {\n  outline: 0 solid magenta !important;\n}\n\nhtml .ct-hover {\n  outline: 2px solid #FC8DFF !important;\n  cursor: pointer;\n}\n\nhtml .ct-current, html .ct-hover.ct-current {\n  outline: 3px solid magenta !important;\n  cursor: pointer;\n  -webkit-transition: outline .1s;\n  -moz-transition: outline .1s;\n  -ms-transition: outline .1s;\n  -o-transition: outline .1s;\n  transition: outline .1s;\n}", ""]);
 
 	// exports
 

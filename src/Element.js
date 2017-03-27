@@ -31,7 +31,7 @@ class Element {
     this.DOMElement = document.querySelector('' + selector);
     this.initialContent = this.DOMElement.innerHTML;
     this.currentIndex = 0;
-    this.debugClass = 'fp-current';
+    this.debugClass = 'ct-current';
 
     this.contents.unshift(this.initialContent);
   }

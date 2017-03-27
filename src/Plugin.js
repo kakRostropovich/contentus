@@ -16,7 +16,7 @@ class Plugin {
   constructor(options) {
     this.container = document.querySelector('' + options.container);
     this.fastSelector = options.fastClass ?
-                     '.' + options.targetSelector : '.fp';
+                     '.' + options.fastClass : '.ct';
     this.contents = options.contents && options.contents.push !== undefined ?
                     options.contents : null;
     this.elements = [];
@@ -63,15 +63,15 @@ class Plugin {
     document.body.addEventListener('mousemove', event => {
 
       if (event.altKey) {
-        [].map.call(document.querySelectorAll('.fp-hover'), item => {
-          item.classList.remove('fp-hover');
+        [].map.call(document.querySelectorAll('.ct-hover'), item => {
+          item.classList.remove('ct-hover');
         });
-        event.target.classList.add('fp-hover');
+        event.target.classList.add('ct-hover');
 
         event.stopPropagation();
       } else {
-        [].map.call(document.querySelectorAll('.fp-hover'), item => {
-          item.classList.remove('fp-hover');
+        [].map.call(document.querySelectorAll('.ct-hover'), item => {
+          item.classList.remove('ct-hover');
         });
       }
 
@@ -82,7 +82,7 @@ class Plugin {
 
       if (event.altKey) {
 
-        const prefix = 'fp-uniq';
+        const prefix = 'ct-uniq';
         let uniqClass = prefix + Math.random().toString().slice(2);
         let classWithPrefix = '';
         let target = event.target;
