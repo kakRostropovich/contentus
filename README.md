@@ -26,7 +26,7 @@ Then run contentus:
 
 ```
 <script>
-  frontPaste.create({
+  contentus.create({
     fastClass: 'myClass',
       contents: [
       'Small text for example',
@@ -69,7 +69,7 @@ $ npm install contentus
 
 ```
 <script>
-  frontPaste.create({
+  contentus.create({
     fastClass: 'myClass',
       contents: [
       'Small text for example',
