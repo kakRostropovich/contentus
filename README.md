@@ -28,7 +28,7 @@ Then run contentus:
 <script>
   contentus.create({
     fastClass: 'myClass', # 'ct' by default
-      contents: [
+    contents: [
       'Small text',
       'Middle text...',
       'Big text...',
@@ -72,7 +72,7 @@ $ npm install contentus
 <script>
   contentus.create({
     fastClass: 'myClass', // 'ct' по умолчанию
-      contents: [
+    contents: [
       'Короткий текст для заголовка',
       'Текст подлиннее для абзаца...',
       'Самый большой текст...'

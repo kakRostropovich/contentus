@@ -6,12 +6,53 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contentus</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page">
-    <h1>Contentus</h1>
-    <p>Simple JS-library (without dependencies) to help fast testing elements during the development of web interfaces.</p>
-    <p>created by <a href="https://twitter.com/kakrostropovich">@kakRostropovich</a></p>
-  </div>
+
+  <main class="page">
+    <header class="page_header">
+      <h1 class="plugin_name">Contentus.js</h1>
+      <h3 class="description">Небольшой плагин для легкой подстановки разного контента в интерфейс во время верстки.</h3>
+    </header>
+
+    <content class="page_content">
+      <section class="columns">
+
+        <article class="column ct">
+          <h3 class="examples_header">Как работает плагин?</h3>
+          <p>Этому элементу при верстке был задан класс "ct", и потому он сразу был выделен. Можно выделить любой другой элемент для подставновки контента зажав <strong>Alt</strong> и выбрав элемент курсором.</p>
+          <p>Изменять содержимое элемента можно клавишами "Вперед/Назад" или цифрами 1, 2, и 3 на клавиатуре.</p>
+          <p>Чтобы сбросить элемент в начальное состояние - можно нажать <strong>Escape</strong></p>
+        </article>
+        <article class="column">
+          <h3 class="examples_header">Можете выбрать этот текст</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error expedita explicabo facilis laudantium maxime quos sint. Accusantium distinctio doloribus ipsam provident, reiciendis repellendus tempore! Aspernatur mollitia necessitatibus quibusdam quisquam recusandae.</p>
+        </article>
+        <article class="column">
+          <h3 class="examples_header">... или этот :)</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta dolorem eaque fugiat id in ipsam iusto nesciunt perspiciatis porro quaerat, quisquam reiciendis rem repellendus reprehenderit saepe unde vel voluptates?</p>
+        </article>
+      </section>
+    </content>
+
+    <footer class="page_footer">
+      <p class="author">created by <a href="https://twitter.com/kakrostropovich">@kakRostropovich</a></p>
+      <p><a href="https://github.com/kakRostropovich/contentus">Код на Github</a></p>
+    </footer>
+
+  </main>
+
+  <script src="contentus.min.js"></script>
+  <script>
+
+    contentus.create({
+      contents: [
+        'Lorem ipsum dolor sit amet.',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem consequuntur enim impedit laudantium necessitatibus, placeat quo rerum tempora ut?',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci animi aspernatur at blanditiis, dicta doloribus dolorum ducimus ea enim est ex excepturi id, iure magnam minima nulla obcaecati officia optio possimus quis quo rem rerum soluta sunt tempora, velit voluptates. Alias aspernatur, deleniti eius impedit itaque magni quasi rem soluta voluptate voluptatibus! Accusamus animi atque ea perspiciatis quam vel veniam voluptatibus. Ducimus excepturi ipsa iste, iure minus molestias necessitatibus officia provident quis quod recusandae, rerum ullam ut vel vitae voluptas voluptates. A blanditiis consectetur doloribus, facere hic id inventore laboriosam magnam molestiae nam, nihil pariatur quasi, quos tempora tempore?'
+      ]
+    })
+  </script>
 </body>
 </html>
