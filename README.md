@@ -31,7 +31,7 @@ Then run contentus:
     contents: [
       'Small text',
       'Middle text...',
-      'Big text...',
+      '<p>And you can add any html. <img src="cat.jpeg" alt="Cat"/><p>',
     ]
   });
 </script>
@@ -75,7 +75,7 @@ $ npm install contentus
     contents: [
       'Короткий текст для заголовка',
       'Текст подлиннее для абзаца...',
-      'Самый большой текст...'
+      '<p>А еще можно добавлять любую html-разметку. <img src="cat.jpeg" alt="Cat"/><p>'
     ]
   });
 </script>
